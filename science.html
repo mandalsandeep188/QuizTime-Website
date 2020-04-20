@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body id="quiz">
+    <header>
+        <h2>Quiz Time</h2>
+        <ul>
+            <li class="navbar"><a href="Home.html">Home</a></li>
+            <li class="navbar"><a href="#">Quizes</a></li>
+            <li class="navbar"><a href="#">Rules</a></li>
+            <li class="navbar"><a href="#">About Us</a></li>
+        </ul>
+        <div id="hamburger" onclick="navbar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div id="navbar">
+        <ul>
+            <li class="nav"><a href="Home.html">Home</a></li>
+            <li class="nav"><a href="#">Quizes</a></li>
+            <li class="nav"><a href="#">Rules</a></li>
+            <li class="nav"><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <section id="questions">
+        <h1>Science Quiz</h1>
+        <div>
+            <div class="ques">
+                <p class="q"><b>1.</b> The mass of a star is two times the mass of the Sun. How will it come to an end?</p>
+                <div class="opt">
+                    <div class="options"  onclick="check(this,'correct1')">Red Giant</div>
+                    <div class="options"  onclick="check(this,'correct1')">Blackhole</div>
+                    <div class="options" id="correct1" onclick="check(this,'correct1')" >Neutron Star</div>
+                    <div class="options"  onclick="check(this,'correct1')">White Dwarf</div>
+                </div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>2.</b> Cement is made hard by which process?</p>
+                <div class="options" onclick="check(this,'correct2')">Polymerisation</div>
+                <div class="options" onclick="check(this,'correct2')">Dehydration</div>
+                <div class="options" onclick="check(this,'correct2')">Dissociation of water</div>
+                <div class="options" id="correct2" onclick="check(this,'correct2')">Hydration and Dissociation of water</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>3.</b> What happens when a chemical bond is formed?</p>
+                <div class="options" onclick="check(this,'correct3')">More energy is released than is absorbed</div>
+                <div class="options" id="correct3" onclick="check(this,'correct3')">Energy is always absorbed</div>
+                <div class="options" onclick="check(this,'correct3')">Energy is always released</div>
+                <div class="options" onclick="check(this,'correct3')">Energy is neither released nor absorbed</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>4.</b> The disease that is caused by the virus is?</p>
+                <div class="options" id="correct4" onclick="check(this,'correct4')">Common Cold</div>
+                <div class="options" onclick="check(this,'correct4')">Typhoid</div>
+                <div class="options" onclick="check(this,'correct4')">Cholera</div>
+                <div class="options" onclick="check(this,'correct4')">Tetanus</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>5.</b> Which of the following is not a moon of Saturn?</p>
+                <div class="options" onclick="check(this,'correct5')">Titan</div>
+                <div class="options" onclick="check(this,'correct5')">Hyperion</div>
+                <div class="options" onclick="check(this,'correct5')">Enceladus</div>
+                <div class="options" id="correct5" onclick="check(this,'correct5')">Phobos</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>6.</b> Which of the followoing star is closest to earth?</p>
+                <div class="options" onclick="check(this,'correct6')">Centaurus</div>
+                <div class="options" id="correct6" onclick="check(this,'correct6')">Proxima Centauri</div>
+                <div class="options" onclick="check(this,'correct6')">Alpha Centauri A and Alpha Centauri B</div>
+                <div class="options" onclick="check(this,'correct6')">Betelgeuse</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>7.</b> The colour of the eye depends upon the pigment present inside?</p>
+                <div class="options" onclick="check(this,'correct7')">Rods</div>
+                <div class="options" onclick="check(this,'correct7')">Cornea</div>
+                <div class="options" id="correct7" onclick="check(this,'correct7')">Iris</div>
+                <div class="options" onclick="check(this,'correct7')">Cones</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>8.</b> In which of the following substances all carbon atoms are quaternary in nature?</p>
+                <div class="options" id="correct8" onclick="check(this,'correct8')">Diamond</div>
+                <div class="options" onclick="check(this,'correct8')">Naphthalene</div>
+                <div class="options" onclick="check(this,'correct8')">Graphite</div>
+                <div class="options" onclick="check(this,'correct8')">Teflon</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>9.</b> The number of chromosomes present in a normal human being is?</p>
+                <div class="options" id="correct9" onclick="check(this,'correct9')">46</div>
+                <div class="options" onclick="check(this,'correct9')">23</div>
+                <div class="options" onclick="check(this,'correct9')">48</div>
+                <div class="options" onclick="check(this,'correct9')">22</div>
+            </div>
+            <div class="ques">
+                <p class="q"><b>10.</b> What is the boundary defining the region of space around a black hole from which nothing (not even light) can escape called?</p>
+                <div class="options" onclick="check(this,'correct10')">Photon Sphere</div>
+                <div class="options" id="correct10" onclick="check(this,'correct10')">Event Horizon</div>
+                <div class="options" onclick="check(this,'correct10')">Singularity</div>
+                <div class="options" onclick="check(this,'correct10')">Quasur</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <ul>
+            <li>Mobile No. : 8368065287</li>
+            <li>Email Id : mandalsandeep188@gmail.com</li>
+        </ul>
+        <div id="social">
+            <h2>Follow us:</h2>
+            <img src="fb.png" class="social" alt="Image not found">
+            <img src="twitter.png" class="social" alt="Image not found">
+            <img src="insta.png" class="social" alt="Image not found">
+        </div>
+    </section>
+
+    <footer>
+        Copyright &copy; Quiztime.com All rights reserved to Sandeep!!
+    </footer>
+    <script src="check.js"></script>
+    <script src="responsive.js"></script>
+</body>
+
+</html>
