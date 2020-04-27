@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2','Times New Roman', Times, serif;
+}
+header{
+    background-color: #87548d;
+    position: sticky;
+    top: 0px;
+    color: white;
+    padding: 5px;
+}
+header h2{
+    display: inline;
+    margin: 5px;
+    font-size: 2rem;
+}
+header ul{
+    display: inline;
+    margin: 0px 25px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.navbar a:hover{
+    font-weight: bold;
+}
+.navbar {
+    list-style: none;
+    display: inline;
+}
+#welcome::before{
+    content: "";
+    position: absolute;
+    background: url(bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 718px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.welcomeshow::before{
+    top: 188px;
+}
+.welcomehide::before{
+    top: 0px;
+}
+#welcome{
+    text-align: center;
+    font-size: 1.6rem;
+    height: 657px;
+    padding: 9%;
+}
+#welcome h1{
+    font-size: 4.5rem;
+}
+#welcome p{
+    font-size: 1.5rem;
+}
+#section{
+    text-align: justify;
+    font-size: 1.6rem;
+    height: 657px;
+    padding: 4% 7%;
+}
+#section p{
+    margin: 2%;
+}
+#section #greet{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#section::before{
+    content: "";
+    position: absolute;
+    background: url(bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 718px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#btn{
+    display: block;
+    padding: 3px 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: indigo;
+    color: white;
+    margin: 2% auto;
+    font-size: 1.6rem;
+    cursor: pointer;
+    outline: none;
+}
+#btn:hover{
+    background-color: darkmagenta;
+}
+#btn:active{
+    background-color: violet;
+}
+#category h1{
+    text-align: center;
+    font-size: 3rem;
+}
+#category{
+    background: url(category.jpg) no-repeat center center/cover;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.quiz{
+    display: inline-block;
+    height: 315px;
+    width: 28%;
+    background-color: violet;
+    border: 2px solid white;
+    border-radius: 35px;
+    margin: 20px 2%;
+    box-shadow: gray 10px 10px 10px;
+}
+.container{
+    width:90%;
+    margin: auto;
+}
+#welcome a{
+    text-decoration: none;
+}
+.logo{
+    width: 100%;
+    height: 311px;
+    border-radius: 33px;
+}
+
+.quiz:hover{
+    box-shadow: gray 15px 15px 15px;
+}
+.quiz:active{
+    box-shadow: gray 0px 0px 0px;
+    opacity: 0.8;
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 3em;
+}
+#contact{
+    font-size: 1.3em;
+    background: url(contact.jpg) no-repeat center center/cover;
+    padding: 3%;
+    font-weight: bold;
+}
+#contact a{
+    text-decoration: none;
+}
+#contact ul{
+    margin: 0px 5%;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+    padding: 1.5%;
+}
+.social{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.social:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+.social:active{
+    box-shadow: 0px 0px 0px grey;
+}
+#social{
+    float: right;
+    margin: 0px 5%;
+}
+#quiz{
+    background: url("background.jpg") no-repeat center center/cover;
+}
+#questions h1{
+    text-align: center;
+    font-size: 3.2rem;
+} 
+#questions{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px
+}
+
+.ques{
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.options{
+    border: 2px solid #87548d;
+    border-radius: 4px;
+    margin: 8px auto;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    background-color: rgb(236, 190, 230);
+    font-size: 1.2em;
+    box-shadow: gray 5px 5px 5px;
+    cursor: pointer;
+}
+.q{
+    background-color: rgb(236, 190, 230);
+    padding: 10px;
+    border: 2px solid #87548d;
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-size: 1.4em;
+    box-shadow: gray 3px 3px 3px;
+}
+.opt{
+    margin: 10px auto;
+}
+.options:hover{
+    box-shadow: gray 8px 8px 8px;
+    background-color: violet;
+}
+.options:active{
+    box-shadow: gray 0px 0px 0px;
+    background-color: blueviolet;
+}
+#checked{
+    text-align: center;
+    color: white;
+    background-color: #27c527;
+    border-radius: 5px;
+}
+
+#navbar{
+    display: none;
+} 
+#navbar ul{
+    list-style: none;
+} 
+/* CSS for phone */
+@media only screen and (max-width:820px)
+{
+    #navbar{
+        list-style: none;
+        text-align: center;
+        background-color: #87548d;
+        position: sticky;
+        top: 66px;
+        padding: 5px;
+        border: 2px solid #613c64;
+    } 
+    #social{
+        float: none;
+    }
+    #welcome{
+        height: 650px;
+    }
+    #welcome h1{
+        font-size: 3.5rem;
+    }
+    #welcome p{
+        font-size: 1.25rem;
+    }
+    #section{
+        height: 650px;
+    }
+    #section h1{
+        font-size: 2.2rem;
+    }
+    #section p{
+        font-size: 1.15rem;
+    }
+    #section #greet{
+        font-size: 2.2rem;
+    }
+    #section ul{
+        font-size: 1.2rem;
+    }
+    .quiz{
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+    }
+    header ul{
+        display: none;
+    }
+    header{
+        text-align: center;
+    }
+    header h2{
+        font-size: 2.2rem;
+    }
+    #category h1{
+        font-size: 2.2rem;
+    }
+    #hamburger{
+        float: right;
+        border: 1px solid white;
+        border-radius: 6px;
+        margin: 6px;
+        cursor: pointer;
+    }
+    #hamburger:active{
+        background-color:violet;
+    }
+    .line{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 7px;
+    }
+    #navbar a{
+        text-decoration: none;
+        color: white;
+    }
+    #navbar a:hover{
+        font-weight: bold;
+    }
+    #navbar li{
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+    #btn{
+        font-size: 1.2rem;
+    }
+    .logo{
+        height: 296px;
+    }
+    .quiz{
+        height: 300px;
+    }
+    .options{
+        font-size: 1em;
+    }
+    #questions h1{
+        font-size: 2.2rem;
+    }
+    .q{
+        font-size: 1em;
+    }
+    footer{
+        font-size: 1rem;
+    }
+    #contact h1{
+        font-size: 2em;
+    }
+    #contact{
+        font-size: 1em;
+    }
+}
