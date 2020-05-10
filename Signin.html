@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Time | About</title>
+    <title>Quiz Time | Home</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 </head>
@@ -16,9 +16,9 @@
             <li class="navbar"><a href="Home.html">Home</a></li>
             <li class="navbar"><a href="Home.html#category">Quizes</a></li>
             <li class="navbar"><a href="Rules.html">Rules</a></li>
-            <li class="navbar"><a href="#">About Us</a></li>
+            <li class="navbar"><a href="About.html">About Us</a></li>
             <li class="navbar"><a href="Contact.html">Contact</a></li>
-            <li class="navbar"><a href="Signin.html">Sign in</a></li>
+            <li class="navbar"><a href="#">Sign in</a></li>
         </ul>
         <div id="hamburger" onclick="navbar()">
             <div class="line"></div>
@@ -31,25 +31,41 @@
             <li class="nav"><a href="Home.html">Home</a></li>
             <li class="nav"><a href="Home.html#category">Quizes</a></li>
             <li class="nav"><a href="Rules.html">Rules</a></li>
-            <li class="nav"><a href="#">About Us</a></li>
+            <li class="nav"><a href="About.html">About Us</a></li>
             <li class="nav"><a href="Contact.html">Contact</a></li>
-            <li class="nav"><a href="Signin.html">Sign in</a></li>
+            <li class="nav"><a href="#">Sign in</a></li>
         </ul>
     </div>
     <section id="section" class="welcomehide">
-        <h1>About Quiz Time</h1>
-        <p> Quiz Time website is made by Sandeep Mandal, Student of NIT Kurukshetra. This website contions several
-            exciting quiz categories to explore. You can enjoy all the quizes testing and improving your knowledge on
-            your favourite topics.</p>
-        <p>
-            This website have 3 special categories of quizes (Bollywood, Hollywood and Marvel) for movie and comics
-            geeks with exciting trivias. You can check here how much you know about your favourite movies or character.
-        </p>
-        <p>
-            Try yor favourite quiz category now.
-        </p>
-        <p id="greet"> All The Best!!</p>
+        <div class="form">
+            <h1 style="text-align: center;">Sign in</h1>
+            <form action="Home.html" method="get" onsubmit=" return validate ()">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" class="text" required>
+                <div class="error" id="user">*Username should contain minimum 4 characters and maximum 12 characters
+                </div>
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email" class="text" required>
+                <div class="error" id="emailid">*Email id should have at
+                    least 2 characters between '.' and '@', and at least 2
+                    characters after '.'</div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="text" required>
+                <div class="error" id="pass">*Password should contain minimum 8 characters and maximum 12 characters</div>
+                <label for="cnfpassword">Confirm Password:</label>
+                <input type="password" name="cnfpassword" id="cnfpassword" class="text" required>
+                <div class="error" id="cnfpass">*Different from password you entered</div>
+                <div id="radio">
+                    <label id="gen"> Gender: &nbsp; </label>
+                    <input type="radio" name="gender" id="male" value="Male"> Male &nbsp; &nbsp;
+                    <input type="radio" name="gender" id="female" value="Female"> Female
+                </div>
+                <div class="error" id="gender">*Gender cannot left empty</div>
+                <button type="submit" id="butn">Sign in</button>
+            </form>
+        </div>
     </section>
+
     <section id="contact">
         <h1>Contact Us</h1>
         <ul>
@@ -77,6 +93,7 @@
         Copyright &copy; Quiztime.com All rights reserved to Sandeep!!
     </footer>
     <script src="responsive.js"></script>
+    <script src="validate.js"></script>
 </body>
 
 </html>
