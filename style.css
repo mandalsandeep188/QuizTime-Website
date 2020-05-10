@@ -411,6 +411,7 @@ footer{
         text-align: center;
         background-color: #87548d;
         position: sticky;
+        z-index: 2;
         top: 66px;
         padding: 5px;
         border: 2px solid #613c64;
