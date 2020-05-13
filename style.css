@@ -84,7 +84,7 @@ header ul{
     height: 718px;
     left: 0px;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 #btn{
     display: block;
@@ -396,7 +396,7 @@ footer{
         left:25%
     }
     .form{
-        width: 90%;
+        width: 100%;
         font-size: 1rem;
     }
     .form .text{
@@ -411,8 +411,8 @@ footer{
         text-align: center;
         background-color: #87548d;
         position: sticky;
-        z-index: 2;
         top: 66px;
+        z-index: 2;
         padding: 5px;
         border: 2px solid #613c64;
     } 
@@ -445,7 +445,7 @@ footer{
     }
     .quiz{
         display: block;
-        width: 80%;
+        width: 85%;
         margin: 40px auto;
     }
     header ul{
